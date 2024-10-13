@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+html 
+    head 
+        style 
+            include index.css
+            script(src='index.js')
+        title Remote
+    body#wrapper
+        input#url(type="text")
+        each command in commands 
+            button(data-command=command.cmd data-type=command.type)=command.label
+    
+    script 
+        include index.js 

@@ -1,0 +1,54 @@
+[
+    {
+        "label":"Fullscreen YT",
+        "type":"kb",
+        "cmd":"f"
+    },
+    {
+        "label":"UP",
+        "type":"kb",
+        "cmd":"Up"
+    },
+    {
+        "label":"Close tab",
+        "type":"kb",
+        "cmd":"ctrl%2bw"
+    },
+    {
+        "label":"LEFT",
+        "type":"kb",
+        "cmd":"Left"
+    }
+    ,
+    {
+        "label":"Enter",
+        "type":"kb",
+        "cmd":"Return"
+    },
+    {
+        "label":"RIGHT",
+        "type":"kb",
+        "cmd":"Right"
+    },
+    {
+        "label":"Kodi",
+        "type":"app",
+        "cmd":"kodi"
+    },
+    {
+        "label":"DOWN",
+        "type":"kb",
+        "cmd":"Down"
+    },
+    {
+        "label":"Escape",
+        "type":"kb",
+        "cmd":"Escape"
+    }
+    ,
+    {
+        "label":"Quit kodi",
+        "type":"kb",
+        "cmd":"ctrl%2bEnd"
+    }
+]

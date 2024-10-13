@@ -11,25 +11,25 @@ const {exec} = require('child_process')
 
 app.set('view engine', 'pug')
 
-app.get('/', (req,res)=>{
+app.get('/exec',(req,res)=>{
     let {url, type, cmd} = req.query
     console.log(type, cmd)
     if(url){
         exec(`firefox ${url}`)
-        res.send('ok')
     }
     else if(type==="kb"){
         exec(xdo + cmd)
-        res.send('ok')
     }
     else if(type==="app"){
         exec(cmd)
-        res.send('ok')
     }
-    else{
-        res.render('index.pug',{commands})
-    }
+    res.send('ok')
 })
+app.get('/', (req,res)=>{
+    res.render('index.pug',{commands})
+})
+
+
 
 app.listen(port, ()=>{
     console.log(`running on ${port}`)
